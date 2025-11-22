@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+PyGithub
+requests
+python-dotenv
+radon
+sqlalchemy
+alembic
+pydantic
