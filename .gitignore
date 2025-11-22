@@ -9,3 +9,5 @@ created_session.json
 node_modules/
 .env
 data.json
+h" || true
+no .env tracked
