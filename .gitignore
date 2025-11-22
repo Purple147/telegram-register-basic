@@ -9,3 +9,8 @@ created_session.json
 node_modules/
 .env
 data.json
+<<<<<<< HEAD
+=======
+h" || true
+no .env tracked
+>>>>>>> backup-before-cleanup
