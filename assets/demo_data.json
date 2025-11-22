@@ -4,8 +4,7 @@
     "username": "testuser",
     "answers": {
       "name": "Ali",
-      "email": "ali@example.com",
-      "role": "developer"
+      "email": "ali@example.com"
     },
     "timestamp": "2025-11-22T10:00:00Z"
   }
