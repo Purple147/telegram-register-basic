@@ -23,3 +23,13 @@
 
    # با داکر
    docker-compose up --build -d
+
+
+   # در شاخه repo
+docker-compose up --build
+# یا لوکال بدون داکر
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python bot.py
+
