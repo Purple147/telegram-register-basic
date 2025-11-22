@@ -14,3 +14,5 @@ data.json
 h" || true
 no .env tracked
 >>>>>>> backup-before-cleanup
+data.json
+assets/demo_data.json
