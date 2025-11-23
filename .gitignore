@@ -1,23 +1,29 @@
-.env
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.log
-created_session.json
-.vscode/
-.DS_Store
-*.sqlite
-node_modules/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# dotenv
 .env
-data.json
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-h" || true
-no .env tracked
->>>>>>> backup-before-cleanup
-data.json
-assets/demo_data.json
-=======
-h" || true
-no .env tracked
->>>>>>> fcce6ee16f73c2e6a24c32578ec3c12da209a9d9
+.env.*
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IPython / Jupyter
+.ipynb_checkpoints
+
+# Editor folders
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

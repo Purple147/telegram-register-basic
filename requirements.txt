@@ -1,9 +1,6 @@
-fastapi
-uvicorn[standard]
-PyGithub
+# بعد از تست لوکال نسخه‌ها را pin کن با pip freeze
+telethon
+pyrogram
 requests
+aiohttp
 python-dotenv
-radon
-sqlalchemy
-alembic
-pydantic
