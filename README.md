@@ -47,3 +47,17 @@ pip install -r requirements.txt
 cp .env.example .env
 # edit .env to put BOT_TOKEN and other values
 python bot.py
+
+
+## Windows Quickstart
+
+# Quickstart (Windows)
+python -m venv .venv
+# in Git Bash:
+source .venv/Scripts/activate
+# in PowerShell:
+# .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cp .env.example .env
+# edit .env to put BOT_TOKEN and other values
+python bot.py
