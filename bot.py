@@ -35,3 +35,36 @@ if __name__ == "__main__":
         logging.exception("Bot crashed")
         print(traceback.format_exc())
         raise
+
+# اضافه کن در پایینِ bot.py
+if __name__ == "__main__":
+    import logging, os, asyncio
+    logging.basicConfig(level=logging.INFO)
+    try:
+        # اگر Telethon client در فایل تعریف شده باشد
+        if 'client' in globals():
+            logging.info("Starting Telethon client...")
+            # اگر client از Telethon است:
+            try:
+                client.start(bot_token=os.getenv("BOT_TOKEN"))
+                client.run_until_disconnected()
+            except Exception:
+                # fallback async start
+                asyncio.run(client.start(bot_token=os.getenv("BOT_TOKEN")))
+                asyncio.run(client.run_until_disconnected())
+        # اگر python-telegram-bot 'updater' یا Application موجود باشد
+        elif 'updater' in globals():
+            logging.info("Starting python-telegram-bot updater...")
+            updater.start_polling()
+            updater.idle()
+        elif 'Application' in globals() or 'application' in globals():
+            logging.info("Starting PTB Application...")
+            app = globals().get('application') or globals().get('Application')
+            try:
+                app.run_polling()
+            except Exception:
+                logging.warning("Application found but run_polling failed.")
+        else:
+            logging.warning("No 'client' or 'updater' object found in globals(); exiting.")
+    except Exception:
+        logging.exception("Bot crashed")
