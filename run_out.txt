@@ -1,0 +1,4 @@
+2025-11-23 09:56:40,726 INFO Starting bot.py
+2025-11-23 09:56:40,838 INFO ENV BOT_TOKEN present: True
+2025-11-23 09:56:41,130 INFO Loaded .env
+2025-11-23 09:56:41,150 WARNING No 'client' or 'updater' object found in globals(); exiting.
